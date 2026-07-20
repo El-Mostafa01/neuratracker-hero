@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "../lib/base-path";
 
 const NAV_LINKS = [
   "Accueil",
@@ -18,7 +19,7 @@ export function Navbar() {
 
         <a href="#" className="relative flex items-center gap-[5px]">
           <Image
-            src="/hero/logo.svg"
+            src={asset("/hero/logo.svg")}
             alt="NeuraTracker"
             width={36}
             height={36}
@@ -48,7 +49,7 @@ export function Navbar() {
             className="flex cursor-pointer items-center gap-[6px] rounded-full px-[12px] py-[6px] text-[12px] font-medium text-white transition-colors hover:bg-white/10"
           >
             FR
-            <Image src="/hero/chevron.svg" alt="" width={7} height={5} />
+            <Image src={asset("/hero/chevron.svg")} alt="" width={7} height={5} />
           </button>
           <a
             href="#"
@@ -84,7 +85,7 @@ function NavLights() {
       <div className="absolute top-0 right-0 h-[76px] w-[211px] overflow-hidden opacity-25">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/hero/nav-glow-right.svg"
+          src={asset("/hero/nav-glow-right.svg")}
           alt=""
           className="absolute top-[-78px] left-0 w-[221px] max-w-none mix-blend-plus-lighter"
         />
@@ -92,7 +93,7 @@ function NavLights() {
       <div className="absolute top-0 left-0 h-[76px] w-[184px] overflow-hidden opacity-25">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/hero/nav-glow-left.svg"
+          src={asset("/hero/nav-glow-left.svg")}
           alt=""
           className="absolute top-[-78px] left-[-37px] w-[221px] max-w-none rotate-180 -scale-y-100 mix-blend-plus-lighter"
         />

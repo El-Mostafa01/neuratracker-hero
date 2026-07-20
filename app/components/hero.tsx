@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "../lib/base-path";
 
 export function Hero() {
   return (
@@ -37,7 +38,7 @@ export function Hero() {
       <div className="relative aspect-[687/444] w-full max-w-[687px] lg:mr-[21px] lg:h-[444px] lg:w-[687px] lg:shrink-0">
         <video
           className="h-full w-full object-cover mix-blend-multiply"
-          src="/hero/neuratracker-hero.mp4"
+          src={asset("/hero/neuratracker-hero.mp4")}
           autoPlay
           muted
           loop
@@ -67,7 +68,7 @@ function Eyebrow() {
         RETAIL EXECUTION · IA
       </span>
       <Image
-        src="/hero/sparkle.svg"
+        src={asset("/hero/sparkle.svg")}
         alt=""
         width={20}
         height={20}
@@ -89,7 +90,8 @@ function PrimaryCta() {
       />
       <span
         aria-hidden
-        className="absolute inset-0 rounded-[12px] bg-[url('/hero/btn-texture.png')] bg-[length:307px_307px] opacity-40 mix-blend-plus-lighter"
+        className="absolute inset-0 rounded-[12px] bg-[length:307px_307px] opacity-40 mix-blend-plus-lighter"
+        style={{ backgroundImage: `url("${asset("/hero/btn-texture.png")}")` }}
       />
       <span className="relative text-[15px] font-semibold whitespace-nowrap text-white">
         Lancer l&apos;estimation
@@ -108,7 +110,7 @@ function SecondaryCta() {
       href="#"
       className="flex h-[43px] items-center gap-[8px] rounded-[10px] border border-[rgba(173,204,255,0.04)] bg-white px-[22px] text-[15px] font-semibold whitespace-nowrap text-[#111827] shadow-[0px_1px_2px_rgba(16,24,40,0.06)] transition-shadow duration-200 hover:shadow-[0px_4px_12px_rgba(16,24,40,0.12)]"
     >
-      <Image src="/hero/play.svg" alt="" width={10} height={11} />
+      <Image src={asset("/hero/play.svg")} alt="" width={10} height={11} />
       Voir la vidéo ( 60s )
     </a>
   );
