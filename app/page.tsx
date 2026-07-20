@@ -3,7 +3,7 @@ import { Hero } from "./components/hero";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col overflow-hidden bg-white">
+    <main className="relative flex min-h-screen flex-col overflow-hidden bg-[#FCFCFC]">
       <HeroBackground />
       <Navbar />
       <Hero />
@@ -41,7 +41,7 @@ function HeroBackground() {
         className="absolute inset-x-0 bottom-0 h-[55%]"
         style={{
           background:
-            "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 65%, #ffffff 100%)",
+            "linear-gradient(180deg, rgba(252,252,252,0) 0%, rgba(252,252,252,0.85) 65%, #fcfcfc 100%)",
         }}
       />
     </div>
