@@ -73,6 +73,7 @@ function Eyebrow() {
         width={20}
         height={20}
         className="relative"
+        priority
       />
     </div>
   );
@@ -110,7 +111,7 @@ function SecondaryCta() {
       href="#"
       className="flex h-[43px] items-center gap-[8px] rounded-[10px] border border-[rgba(173,204,255,0.04)] bg-white px-[22px] text-[15px] font-semibold whitespace-nowrap text-[#111827] shadow-[0px_1px_2px_rgba(16,24,40,0.06)] transition-shadow duration-200 hover:shadow-[0px_4px_12px_rgba(16,24,40,0.12)]"
     >
-      <Image src={asset("/hero/play.svg")} alt="" width={10} height={11} />
+      <Image src={asset("/hero/play.svg")} alt="" width={10} height={11} priority />
       Voir la vidéo ( 60s )
     </a>
   );

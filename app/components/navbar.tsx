@@ -49,7 +49,13 @@ export function Navbar() {
             className="flex cursor-pointer items-center gap-[6px] rounded-full px-[12px] py-[6px] text-[12px] font-medium text-white transition-colors hover:bg-white/10"
           >
             FR
-            <Image src={asset("/hero/chevron.svg")} alt="" width={7} height={5} />
+            <Image
+              src={asset("/hero/chevron.svg")}
+              alt=""
+              width={7}
+              height={5}
+              priority
+            />
           </button>
           <a
             href="#"
