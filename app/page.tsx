@@ -4,7 +4,7 @@ import { HeroBackground } from "./components/hero-background";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col overflow-hidden bg-[#FCFCFC]">
+    <main className="relative flex min-h-screen flex-col overflow-hidden bg-[#F8F8F8]">
       <HeroBackground />
       <Navbar />
       <Hero />
