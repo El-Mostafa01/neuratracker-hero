@@ -35,9 +35,9 @@ export function Hero() {
         </p>
       </div>
 
-      <div className="relative aspect-[687/444] w-full max-w-[687px] lg:mr-[21px] lg:h-[444px] lg:w-[687px] lg:shrink-0">
+      <div className="relative aspect-[16/9] w-full max-w-[720px] lg:mr-[24px] lg:h-[405px] lg:w-[720px] lg:shrink-0">
         <video
-          className="h-full w-full object-cover mix-blend-multiply"
+          className="h-full w-full object-cover mix-blend-darken"
           src={asset("/hero/neuratracker-hero.mp4")}
           autoPlay
           muted
