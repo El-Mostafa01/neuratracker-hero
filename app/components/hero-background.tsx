@@ -31,7 +31,7 @@ function Bulbs() {
   return (
     <div className="absolute left-[-190px] top-[82px] h-[558px] w-[727px] opacity-[0.58]">
       {/* Bulb 1 — large diagonal glow */}
-      <div className="absolute left-[-136.94px] top-[-140.19px] flex h-[865.451px] w-[908.848px] items-center justify-center blur-[118px]">
+      <div className="absolute left-[-136.94px] top-[-140.19px] flex h-[865.451px] w-[908.848px] items-center justify-center blur-[80px]">
         <div className="rotate-[-31.4deg]">
           <div
             className="relative h-[580.184px] w-[710.649px]"
@@ -57,7 +57,7 @@ function Bulbs() {
       </div>
 
       {/* Bulb 2 — smaller lower-right glow */}
-      <div className="absolute left-[414.56px] top-[279.22px] flex h-[350.538px] w-[368.116px] items-center justify-center blur-[118px]">
+      <div className="absolute left-[414.56px] top-[279.22px] flex h-[350.538px] w-[368.116px] items-center justify-center blur-[80px]">
         <div className="-scale-y-100 rotate-[-148.6deg]">
           <div
             className="relative h-[234.995px] w-[287.838px]"
