@@ -86,16 +86,17 @@ function Bulbs() {
 }
 
 /**
- * "Fractal Glass" (Figma node 752:1767): 12 vertical 60px columns clipped to
- * a 960px band on the left. Each column's backdrop-blur frosts the bulbs
- * behind it, producing the soft striped light on the left of the hero.
+ * "Fractal Glass" (Figma node 11019:1457): 22 vertical 60px columns, each with
+ * a backdrop-blur that frosts the bulbs behind it. Clip content is OFF, so the
+ * band is not clipped — it spans from x=-600 (off the left edge) to x=960,
+ * with columns running to a right edge of x=720 (relative to the 1534 frame).
  */
 function FractalGlass() {
   const columnGradient =
     "linear-gradient(90deg, rgba(204,204,204,0.02) 0%, rgba(242,242,242,0.11) 67%, rgba(204,204,204,0.02) 100%)";
   return (
-    <div className="absolute bottom-0 left-0 h-full w-[960px] overflow-hidden">
-      {Array.from({ length: 12 }).map((_, i) => (
+    <div className="absolute bottom-0 left-[-600px] h-full w-[1560px]">
+      {Array.from({ length: 22 }).map((_, i) => (
         <div
           key={i}
           className="absolute top-0 h-full w-[60px] backdrop-blur-[90px]"
